@@ -1,0 +1,314 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.course-info-container {
+    background-color: #fff;
+    border: 0.5px solid #ddd; /* 修改边框宽度为 0.5px */
+    border-radius: 15px; /* 圆角 */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    box-shadow: 0 2px 4px rgba(154, 153, 153, 0.1);
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+}
+
+.course-title-img {
+    width: 600px; /* 调整为与目标图片相同的宽度 */
+    /*height: 250px; /* 调整为与目标图片相同的高度 */
+    margin-right: 1%;
+    margin-left: 5%; /* 右侧间距 */
+    padding-top: 0%;
+}
+
+.course-details {
+    flex: 1;
+    padding-top: 0%;
+}
+
+.course-details h1 {
+     position: relative;
+    top: 0px; 
+}
+
+.gray-rounded-box {
+    background-color: #cdcaca;
+    padding: 10%;
+    border-radius: 8%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gray-rounded-box {
+    background-color: #f5f5f5; /* 修改背景颜色为浅灰色 */
+    padding: 20px; /* 调整内边距 */
+    border-radius: 10px; /* 调整圆角大小 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.course-info-table caption {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.course-info-table th,
+.course-info-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap; /* 新增：防止文字换行 */
+    font-size: 10px; /* 修改：设置文字字号为 14px（可以根据需要调整） */
+}
+
+.course-info-table th {
+    background-color: #f0f0f0; /* 表头背景颜色 */
+}
+
+.course-details p {
+    margin: 10px 0;
+}
+
+.course-details button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    margin: 20px;
+}
+
+/* styles.css */
+
+.details summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.section-content {
+    margin-left: 20px;
+}
+
+.section-content h3 {
+    margin-top: 10px;
+}
+
+.large-summary-text {
+    font-size: 20px;
+}
+
+.course-content {
+    flex: 3;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.course-content h2 {
+    margin-top: 0;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+}
+
+.university-logo img {
+    width: 200px;
+}
+
+.instructors ul, .recommended-courses ul {
+    list-style: none;
+    color: #007bff; /* 链接颜色 */
+    text-decoration: none; /* 移除下划线 */
+    transition: color 0.3s; /* 颜色过渡效果 */
+    padding: 0;
+}
+
+.instructor-block {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.instructor-cover {
+    width: 120px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.instructor-icon {
+    width: 20px; /* 调整为合适的标识符图片宽度 */
+    height: auto;
+    margin-right: 10px; /* 添加右侧间距 */
+    vertical-align: middle; /* 与文本垂直居中对齐 */
+}
+
+.instructor-info-text h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.recommended-course-block {
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    color: inherit;
+}
+
+.course-cover {
+    width: 120px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.course-info-text h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.course-info-text p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* 新增链接样式 */
+.instructors a {
+    color: #007bff; /* 链接颜色 */
+    text-decoration: none; /* 移除下划线 */
+    transition: color 0.3s; /* 颜色过渡效果 */
+}
+
+.instructors a:hover {
+    color: #0056b3; /* 鼠标悬停时的颜色 */
+    text-decoration: underline; /* 鼠标悬停时显示下划线 */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* 新增固定图标样式 */
+.fixed-icon {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000; /* 确保图标在其他内容之上 */
+}
+
+.fixed-icon img {
+    width: 50px; /* 可根据实际图标大小调整 */
+    height: 50px;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.tab:hover {
+    background-color: #45a049;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.references-list {
+    list-style: none;
+    padding: 0;
+}
+
+.references-list li a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.references-list li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.references-list li {
+    margin-bottom: 10px;
+}
+
+/* 添加分享区域样式 */
+.share-section {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.share-icon {
+    width: 30px; /* 根据实际图标大小调整 */
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
