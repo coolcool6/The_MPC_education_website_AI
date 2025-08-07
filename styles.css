@@ -135,8 +135,17 @@ main {
     padding: 20px;
 }
 
-.university-logo img {
-    width: 200px;
+.university-logo-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.university-logo img, .civilgpt-logo img {
+    width: 150px;
+    height: auto;
 }
 
 .instructors ul, .recommended-courses ul {

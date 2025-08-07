@@ -39,9 +39,9 @@
             display: block;
         }
         
-        /* 添加控制悬浮按钮位置的样式 */
+        /* 修改控制悬浮按钮位置的样式 */
         #hiagent_web_lite_button {
-            bottom: 100px !important; /* 将按钮上移 */
+            bottom: 1200px !important; /* 增大数值以进一步上移按钮 */
         }
     </style>
 </head>
@@ -1053,13 +1053,20 @@
         </section>
 
         <aside class="sidebar">
-            <div class="university-logo">
-                <a href="https://www.tongji.edu.cn" target="_blank">
-                    <img src="logo1.png" alt="同济大学 Logo">
-                </a>
-            </div>
+            <div class="university-logo-container" style="display: flex; flex-direction: row; gap: 20px; align-items: center;">
+                <div class="university-logo">
+                    <a href="https://agent.tongji.edu.cn/product/llm/mall/application" target="_blank">
+                        <img src="logo1.png" alt="同济大学 Logo" style="width: 150px; height: auto;">
+                    </a>
+                </div>
 
-            
+                <!-- 新增CivilGPT图片 -->
+                <div class="civilgpt-logo">
+                    <a href="https://civilgpt.tongji.edu.cn" target="_blank">
+                        <img src="CivilGPT.PNG" alt="CivilGPT" style="width: 150px; height: auto;">
+                    </a>
+                </div>
+            </div>
 
             <div class="recommended-courses">
                 <h3>推荐课程</h3>
@@ -1109,14 +1116,13 @@
         <!-- 新增固定图标 -->
         
         <!-- 以下代码请放入前端html文件的body内 -->
-        <!-- 以下代码请放入前端html文件的body内 -->
-           <!-- 以下代码请放入前端html文件的body内 -->
-             <script src="https://agent.tongji.edu.cn/resources/product/llm/public/sdk/embedLite.js"></script>
-             <script>
-                     new HiagentWebSDK.WebLiteClient({appKey: "d1tphrbm1orcf177m1kg", baseUrl: "https://agent.tongji.edu.cn"});
-             </script> 
-   // <!-- 以下代码请放入前端html文件的body内 -->
-       
+    
+    <!-- 以下代码请放入前端html文件的body内 -->
+       <!-- 以下代码请放入前端html文件的body内 -->
+          <script src="https://agent.tongji.edu.cn/resources/product/llm/public/sdk/embedLite.js"></script>
+          <script> 
+            new HiagentWebSDK.WebLiteClient({appKey: "d1tphrbm1orcf177m1kg", baseUrl: "https://agent.tongji.edu.cn"});
+          </script>
 <script>
         // 补充 tab 切换逻辑
         function toggleTab(event, tabId) {
@@ -1149,12 +1155,6 @@
                 alert('复制链接失败，请手动复制。');
             });
     }
-</script>              
+</script>
 </body>
-
 </html>
-
-
-
-
-
