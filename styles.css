@@ -1,25 +1,29 @@
 /* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
 }
 
 header {
-    background-color: #f5f5f5;
+    background: linear-gradient(135deg, #e6f7ff, #f0f8ff);
     padding: 20px;
-    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    border-radius: 0 0 15px 15px;
 }
 
 .course-info-container {
-    background-color: #fff;
-    border: 0.5px solid #ddd; /* 修改边框宽度为 0.5px */
-    border-radius: 15px; /* 圆角 */
+    background: linear-gradient(to bottom, #ffffff, #f9fbfd);
+    border: 1px solid #d0e6f8;
+    border-radius: 15px;
     padding: 20px;
     margin: 20px auto;
     max-width: 80%;
-    box-shadow: 0 2px 4px rgba(154, 153, 153, 0.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
 }
 
 .course-info {
@@ -28,11 +32,11 @@ header {
 }
 
 .course-title-img {
-    width: 600px; /* 调整为与目标图片相同的宽度 */
-    /*height: 250px; /* 调整为与目标图片相同的高度 */
+    width: 600px;
     margin-right: 1%;
-    margin-left: 5%; /* 右侧间距 */
-    padding-top: 0%;
+    margin-left: 5%;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
 }
 
 .course-details {
@@ -41,22 +45,18 @@ header {
 }
 
 .course-details h1 {
-     position: relative;
-    top: 0px; 
+    position: relative;
+    top: 0px;
+    color: #2c5aa0;
+    font-weight: 600;
 }
 
 .gray-rounded-box {
-    background-color: #cdcaca;
-    padding: 10%;
-    border-radius: 8%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.gray-rounded-box {
-    background-color: #f5f5f5; /* 修改背景颜色为浅灰色 */
-    padding: 20px; /* 调整内边距 */
-    border-radius: 10px; /* 调整圆角大小 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #f8fbfd, #f5f9fc);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.03);
+    border: 1px solid #c5e1f9;
 }
 
 .course-info-table {
@@ -65,74 +65,121 @@ header {
 }
 
 .course-info-table caption {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2c5aa0;
 }
 
 .course-info-table th,
 .course-info-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    border: 1px solid #c5e1f9;
+    padding: 12px;
     text-align: left;
-    white-space: nowrap; /* 新增：防止文字换行 */
-    font-size: 10px; /* 修改：设置文字字号为 14px（可以根据需要调整） */
+    white-space: nowrap;
+    font-size: 14px;
 }
 
 .course-info-table th {
-    background-color: #f0f0f0; /* 表头背景颜色 */
+    background-color: #e1f0fa;
+    color: #2c5aa0;
+    font-weight: 600;
 }
 
 .course-details p {
     margin: 10px 0;
+    line-height: 1.6;
 }
 
 .course-details button {
-    background-color: #4CAF50;
+    background: linear-gradient(135deg, #64b5f6, #42a5f5);
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course-details button:hover {
+    background: linear-gradient(135deg, #42a5f5, #1e88e5);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 main {
     display: flex;
     margin: 20px;
+    gap: 20px;
 }
 
-/* styles.css */
+details {
+    background-color: #f8fbfd;
+    border: 1px solid #d0e6f8;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
 
-.details summary {
+details:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+details summary {
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 600;
+    color: #2c5aa0;
+    padding: 10px 0;
+    background: linear-gradient(to right, #e6f2ff, #f0f8ff);
+    padding: 15px 20px;
+    border-radius: 10px;
 }
 
 .section-content {
     margin-left: 20px;
+    padding: 15px 0;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
 }
 
 .section-content h3 {
     margin-top: 10px;
+    color: #34495e;
 }
 
 .large-summary-text {
-    font-size: 20px;
+    font-size: 22px;
+    color: #2c5aa0;
 }
 
 .course-content {
     flex: 3;
     padding: 20px;
-    border-right: 1px solid #ddd;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+    border: 1px solid #d0e6f8;
 }
 
 .course-content h2 {
     margin-top: 0;
+    color: #2c5aa0;
+    border-bottom: 2px solid #e1f0fa;
+    padding-bottom: 10px;
 }
 
 .sidebar {
     flex: 1;
     padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+    border: 1px solid #d0e6f8;
 }
 
 .university-logo-container {
@@ -141,18 +188,31 @@ main {
     gap: 20px;
     align-items: center;
     margin-bottom: 30px;
+    background: linear-gradient(to right, #f0f8ff, #f8fbfd);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #c5e1f9;
 }
 
 .university-logo img, .civilgpt-logo img {
     width: 150px;
     height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.university-logo img:hover, .civilgpt-logo img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
 }
 
 .instructors ul, .recommended-courses ul {
     list-style: none;
-    color: #007bff; /* 链接颜色 */
-    text-decoration: none; /* 移除下划线 */
-    transition: color 0.3s; /* 颜色过渡效果 */
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
     padding: 0;
 }
 
@@ -167,18 +227,21 @@ main {
     width: 120px;
     height: auto;
     margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 
 .instructor-icon {
-    width: 20px; /* 调整为合适的标识符图片宽度 */
+    width: 20px;
     height: auto;
-    margin-right: 10px; /* 添加右侧间距 */
-    vertical-align: middle; /* 与文本垂直居中对齐 */
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 .instructor-info-text h4 {
     margin: 0;
     font-size: 16px;
+    color: #2c3e50;
 }
 
 .recommended-course-block {
@@ -192,11 +255,14 @@ main {
     width: 120px;
     height: auto;
     margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .course-info-text h4 {
     margin: 0;
     font-size: 16px;
+    color: #2c3e50;
 }
 
 .course-info-text p {
@@ -205,23 +271,24 @@ main {
     color: #666;
 }
 
-/* 新增链接样式 */
 .instructors a {
-    color: #007bff; /* 链接颜色 */
-    text-decoration: none; /* 移除下划线 */
-    transition: color 0.3s; /* 颜色过渡效果 */
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .instructors a:hover {
-    color: #0056b3; /* 鼠标悬停时的颜色 */
-    text-decoration: underline; /* 鼠标悬停时显示下划线 */
+    color: #2980b9;
+    text-decoration: underline;
 }
 
 footer {
-    background-color: #333;
+    background: linear-gradient(135deg, #2c5aa0, #3a6bc5);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 15px 15px 0 0;
 }
 
 .footer-content nav ul {
@@ -231,58 +298,66 @@ footer {
 
 .footer-content nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
-/* 新增固定图标样式 */
 .fixed-icon {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    z-index: 1000; /* 确保图标在其他内容之上 */
+    z-index: 1000;
 }
 
 .fixed-icon img {
-    width: 50px; /* 可根据实际图标大小调整 */
+    width: 50px;
     height: 50px;
-}
-
-header {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 }
 
 .tab-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    gap: 15px;
 }
 
 .tab {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+    background: linear-gradient(135deg, #a0cfff, #87cefa);
+    color: #2c5aa0;
+    padding: 15px 20px;
     cursor: pointer;
     flex: 1;
     text-align: center;
-    border-radius: 5px;
-    margin-right: 10px;
-    transition: background-color 0.3s;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    border: none;
 }
 
 .tab:hover {
-    background-color: #45a049;
+    background: linear-gradient(135deg, #87cefa, #64b5f6);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
 }
 
 .tab-content {
     display: none;
     margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    border: 1px solid #d0e6f8;
+    animation: fadeIn 0.5s ease;
 }
 
 .tab-content.active {
     display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .references-list {
@@ -291,35 +366,57 @@ header {
 }
 
 .references-list li a {
-    color: #007bff;
+    color: #2c5aa0;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: all 0.3s;
     display: flex;
     align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #f0f8ff, #f8fbfd);
+    margin-bottom: 10px;
+    border: 1px solid #c5e1f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
 .references-list li a:hover {
-    color: #0056b3;
-    text-decoration: underline;
+    color: #1a3d7a;
+    background: linear-gradient(to right, #e1f0fa, #e6f2ff);
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 .references-list li {
     margin-bottom: 10px;
 }
 
-/* 添加分享区域样式 */
 .share-section {
     position: absolute;
     top: 20px;
     right: 20px;
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .share-icon {
-    width: 30px; /* 根据实际图标大小调整 */
-    height: 30px;
+    width: 35px;
+    height: 35px;
     margin-left: 10px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #e6f2ff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #c5e1f9;
+}
+
+.share-icon:hover {
+    transform: scale(1.1);
+    background-color: #cce6ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .course-directory ul {
@@ -332,13 +429,21 @@ header {
 }
 
 .course-directory a {
-    color: #6db1e8;
+    color: #2c5aa0;
     text-decoration: none;
     font-size: 18px;
+    padding: 10px;
+    display: block;
+    border-radius: 8px;
+    transition: all 0.3s;
+    background-color: #f0f8ff;
+    border: 1px solid #c5e1f9;
 }
 
 .course-directory a:hover {
+    background-color: #e1f0fa;
     text-decoration: underline;
+    transform: translateX(5px);
 }
 
 .course-resources ul {
@@ -351,24 +456,33 @@ header {
 }
 
 .course-resources a {
-    color: blue;
+    color: #2c5aa0;
     text-decoration: none;
     font-size: 18px;
+    padding: 12px;
+    display: block;
+    border-radius: 8px;
+    transition: all 0.3s;
+    background: linear-gradient(to right, #f0f8ff, #f8fbfd);
+    border: 1px solid #c5e1f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
 .course-resources a:hover {
+    background: linear-gradient(to right, #e1f0fa, #e6f2ff);
     text-decoration: none;
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 .course-resources a:visited {
-    color: blue;
+    color: #2c5aa0;
 }
 
 .course-resources a:active {
-    color: blue;
+    color: #2c5aa0;
 }
 
-/* 二维码弹窗样式 */
 .qr-modal {
     display: none;
     position: fixed;
@@ -383,34 +497,255 @@ header {
 .qr-modal-content {
     background-color: #fff;
     margin: 15% auto;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 25px;
+    border-radius: 15px;
     width: 350px;
     text-align: center;
     position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .qr-modal-content img {
     width: 300px;
     height: 300px;
+    border-radius: 10px;
 }
 
 .close {
     color: #aaa;
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 15px;
+    right: 20px;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+    transition: color 0.3s;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #2c3e50;
 }
 
 .qr-modal-content p {
     font-size: 18px;
     margin: 15px 0;
+    color: #2c3e50;
+}
+
+#learningAnalysis h2 {
+    color: #2c5aa0;
+    border-bottom: 3px solid #a0cfff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#learningAnalysis details {
+    margin-bottom: 15px;
+    border: 1px solid #c5e1f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    background-color: #f8fbfd;
+}
+
+#learningAnalysis details:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+#learningAnalysis details summary {
+    background: linear-gradient(to right, #e6f2ff, #f0f8ff);
+    padding: 15px 20px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    color: #2c5aa0;
+    transition: background-color 0.3s;
+}
+
+#learningAnalysis details summary:hover {
+    background: linear-gradient(to right, #d0e6f8, #e1f0fa);
+}
+
+#learningAnalysis details[open] summary {
+    background: linear-gradient(135deg, #a0cfff, #87cefa);
+    color: #1a3d7a;
+}
+
+#learningAnalysis .section-content {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+#learningAnalysis .section-content > p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#learningAnalysis .large-summary-text {
+    font-size: 20px;
+    color: #2c5aa0;
+}
+
+#learningAnalysis .references-list {
+    margin-top: 10px;
+}
+
+#learningAnalysis .references-list li {
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #f0f8ff, #f8fbfd);
+    transition: background 0.3s;
+    border: 1px solid #c5e1f9;
+}
+
+#learningAnalysis .references-list li:hover {
+    background: linear-gradient(to right, #e1f0fa, #e6f2ff);
+}
+
+#learningAnalysis .references-list li a {
+    display: flex;
+    align-items: center;
+    color: #2c5aa0;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#learningAnalysis .references-list li a:hover {
+    color: #1a3d7a;
+}
+
+#learningAnalysis .references-list li a .instructor-icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+#learningAnalysis h3 {
+    color: #2c5aa0;
+    margin: 20px 0 15px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #eee;
+}
+
+#references h2 {
+    color: #2c5aa0;
+    border-bottom: 3px solid #a0cfff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#references h3 {
+    color: #2c5aa0;
+    margin: 25px 0 15px 0;
+    padding: 10px 0;
+    border-left: 4px solid #a0cfff;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+#references .references-list {
+    list-style: none;
+    padding: 0;
+}
+
+#references .references-list li {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f0f8ff, #f8fbfd);
+    transition: all 0.3s ease;
+    border: 1px solid #c5e1f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#references .references-list li:hover {
+    background: linear-gradient(to right, #e1f0fa, #e6f2ff);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#references .references-list li a {
+    display: flex;
+    align-items: center;
+    color: #2c5aa0;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#references .references-list li a:hover {
+    color: #1a3d7a;
+}
+
+#references .references-list li a .instructor-icon {
+    margin-right: 12px;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.recommended-courses {
+    background: linear-gradient(to bottom, #ffffff, #f9fbfd);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    border: 1px solid #c5e1f9;
+}
+
+.recommended-courses h3 {
+    color: #2c5aa0;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #a0cfff;
+    font-size: 22px;
+}
+
+.recommended-courses ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recommended-courses li {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f0f8ff, #f8fbfd);
+    transition: all 0.3s ease;
+    border: 1px solid #c5e1f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.recommended-courses li:hover {
+    background: linear-gradient(to right, #e1f0fa, #e6f2ff);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.course-info-text h4 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.course-info-text p {
+    margin: 5px 0 0;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.course-description {
+    line-height: 1.7;
+    color: #333;
+}
+
+.course-description p {
+    margin-bottom: 15px;
 }
