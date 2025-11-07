@@ -749,3 +749,14 @@ footer {
 .course-description p {
     margin-bottom: 15px;
 }
+
+#hiagent_web_lite_button {
+    width: 70px !important;  /* 增大气泡按钮尺寸 */
+    height: 70px !important;
+    bottom: 1200px !important;
+}
+
+#hiagent_web_lite_panel {
+    width: 50% !important;   /* 弹窗宽度占网页一半 */
+    min-width: 500px !important;
+}
