@@ -751,12 +751,12 @@ footer {
 }
 
 #hiagent_web_lite_button {
-    width: 70px !important;  /* 增大气泡按钮尺寸 */
-    height: 70px !important;
+    width: 100px !important;  /* 从80px增大到100px */
+    height: 100px !important;
     bottom: 1200px !important;
 }
 
 #hiagent_web_lite_panel {
-    width: 50% !important;   /* 弹窗宽度占网页一半 */
-    min-width: 500px !important;
+    width: 70% !important;   /* 从60%改为70%宽度 */
+    min-width: 700px !important; /* 从600px增大到700px */
 }
